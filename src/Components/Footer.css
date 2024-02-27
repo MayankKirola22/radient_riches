@@ -1,0 +1,45 @@
+#Footer{
+    background-color: #212731;
+    position: static;
+    bottom: 0;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 100px 0px;
+    align-items: first baseline;
+    margin-top: 20px;
+    min-width: 720px;
+}
+.footerHead{
+    font-size: 16px;
+    color:white;
+    margin: 0px 0px;
+    text-align: left;
+    width: 100%;
+}
+.footerOptions{
+    color: #B6BDC4;
+    font-size: 13px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.footerBlock{
+    text-align: left;
+    margin: 50px;
+}
+
+#whiteDown{
+    scale: 1;
+}
+.country{
+    display: flex;
+    color: #B6BDC4;
+    font-size: 13px;
+    align-items: center;
+}
+#whiteDown{
+    scale: 0.8;
+    margin: 10px;
+}

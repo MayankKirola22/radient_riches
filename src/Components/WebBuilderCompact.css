@@ -1,0 +1,18 @@
+#WebBuilderCompact{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin: 20px;
+    border-radius: 12px;
+    padding: 0px 20px;
+}
+#ViewButtonCompact{
+    background-color: #1B88F4;
+    color:white;
+    border-radius: 12px;
+    padding: 10px;
+    margin: 10px 0px;
+    font-size: 16px;
+    width: 90%;
+}
+

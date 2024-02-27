@@ -1,0 +1,38 @@
+#Navbar{
+    background-color: #212731;
+    height: 64px;
+    position: static;
+    display: flex;
+    top: 0;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-self: center;
+    color : white;
+    width: 100%;
+    min-width: 720px;
+}
+#search{
+    border: none;
+    outline: none;
+    background-color: #00000000;
+}
+#searchLogo{
+        scale:0.5
+}
+.searchInput{
+    background-color: #ffffff;
+    border-radius: 8px;
+    display:flex;
+    width: 258px;
+    height: 38px;
+}   
+.navOption{
+    margin: 0px 2vw;
+    font-size: 14px;
+    display: inline;
+    font-weight: 400;
+}
+.navOptions{
+    margin: 0px 2vw;
+}
