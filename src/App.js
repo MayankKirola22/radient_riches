@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import './App.css';
 import Footer from './Components/Footer';
 import Navbar from './Components/Navbar';
@@ -7,6 +7,14 @@ import WebFont from 'webfontloader';
 
 function App() {
   const [country,setCountry] = useState('United States')
+  const windowWidth = useRef(window.innerWidth);
+  let zoomLevel=Math.min((windowWidth.current/800)*100,100)
+  useEffect(
+    ()=>{
+        document.body.style.zoom = `${zoomLevel}%`;
+      }
+  ,[])
+
   let BuilderInfo=[
     {id:1,heading:'WixPro 72-Inch Responsive Website Builder',intro:'Comprehensive Digital Platform Creation Tool, Streamlined Design Interface for Professional Websites and Online Stores (Black/Blue)',mainHighlights:'[What You Get]: Receive the WixPro website builder suite, access to premium design templates, an extensive library of widgets and apps, and detailed step-by-step guides.',imgCaption:'Builder 1',tag:1,remark:'Exceptional',rating:9.8,stars:5},
     {id:2,heading:'SiteCraft 68-Inch Ultimate Web Design Studio',intro:'Advanced Site Creation Toolkit, Intuitive Drag-and-Drop Editor for Dynamic Websites and E-commerce Platforms (Green/White)',mainHighlights:'[What You Get]: Gain access to the SiteCraft design studio, featuring a robust selection of design elements, SEO optimization tools, and e-commerce integrations.',imgCaption:'Builder',remark:'Excellent',tag:2,rating:9.5,stars:4.5},
