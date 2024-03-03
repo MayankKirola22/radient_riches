@@ -17,7 +17,7 @@ export default function DropdownMenu(){
             <Dropdown  options={options} onChange={setSelectedOption} value={selectedOption} placeholder="Select an option" />
             <h1>{selectedData.heading}</h1>
             <hr/>
-            <img style={{objectFit:'contain',height:"300px"}} src={selectedData.img} alt='fruit'/>
+            <img className="optionImg" src={selectedData.img} alt='fruit'/>
             <hr/>
             {selectedData.body}
         </div>
