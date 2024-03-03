@@ -36,9 +36,13 @@ function App() {
 
   return (
     <div className="App">
-      {/* <Navbar/>
+      <h3>Task 1 : Static Webpage</h3>
+      <Navbar/>
       <Home BuilderInfo={BuilderInfo} BuilderCompact={BuilderInfoCompact}/>
-      <Footer country={country} setCountry={setCountry}/> */}
+      <Footer country={country} setCountry={setCountry}/>
+      <hr/>
+      <h3>Task 2 : Dropdown Menu</h3>
+      <hr/>
       <Dropdown/>
     </div>
   );
