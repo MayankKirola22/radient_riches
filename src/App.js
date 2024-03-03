@@ -4,7 +4,7 @@ import Footer from './Components/Footer';
 import Navbar from './Components/Navbar';
 import Home from './Screens/Home';
 import WebFont from 'webfontloader';
-import Dropdown from './Screens/Dropdown';
+import Dropdown from './Screens/DropdownMenu';
 
 function App() {
   const [country,setCountry] = useState('United States')
@@ -36,10 +36,10 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar/>
-      {/* <Home BuilderInfo={BuilderInfo} BuilderCompact={BuilderInfoCompact}/> */}
+      {/* <Navbar/>
+      <Home BuilderInfo={BuilderInfo} BuilderCompact={BuilderInfoCompact}/>
+      <Footer country={country} setCountry={setCountry}/> */}
       <Dropdown/>
-      <Footer country={country} setCountry={setCountry}/>
     </div>
   );
 }

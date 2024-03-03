@@ -15,6 +15,7 @@ export default function Home({BuilderInfo,BuilderCompact}){
 
     return(
         <div id="Home">
+            <div>
             <div className="heading">Best Website builders in the US</div>
             <hr color="#E1E4E6"/>
             <div>
@@ -68,6 +69,7 @@ export default function Home({BuilderInfo,BuilderCompact}){
             <div style={{display:'flex',justifyContent:'space-between',alignItems:'center'}}>
                 <div className="subHeading">Sign up and get exclusive special deals. </div>
                 <div className="email" style={{display:'flex'}}><input type="email" className="emailInput"/><div className="SignUpButton">Sign Up</div></div>
+            </div>
             </div>
         </div>
     )
